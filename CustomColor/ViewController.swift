@@ -9,10 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  
+  @IBOutlet weak var customView: UIView!
+  @IBOutlet weak var label: UILabel!
+  @IBOutlet weak var button: UIButton!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    //U can set two types of color method
+    
+    //it's First Method
+   customView.backgroundColor = UIColor.appBlueColor
+    
+    //it's second method
+    label.backgroundColor = .appTabbarColor
+    
+    button.backgroundColor = UIColor.appDarkBlueColor
   }
 
   override func didReceiveMemoryWarning() {
